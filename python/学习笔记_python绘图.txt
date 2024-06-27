@@ -1,0 +1,29 @@
+plt.rcParams['font.family'] = ['SimHei']  # 用来正常显示中文标签
+
+#  添加subplots参数，可以将各个度量分开
+data.plot(subplots=True)
+
+
+line  折线图
+bar  柱状图
+barh 水平柱状图（柱状图的x,y互换）
+hist  直方图
+scatter 散点图
+pie   饼图（没有xy轴，x为行索引（默认，不用写），y为指定列）
+
+data.plot(kind='类型')
+
+
+
+PyGWalker  提供类似tableau功能的可视化库
+import pygwalker as pw
+pw.walk(DataFrame)
+
+dimension 维度
+measure     度量
+nominal	     名词
+ordinal	      有序（有递进关系的数据内容，例如小学初中高中）
+quantitative 数值
+temporal       时间类型的字段
+
+小方块（aggregation） 选择是否聚合

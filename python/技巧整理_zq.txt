@@ -1,0 +1,3 @@
+条件类型时 例如data['年龄'] > 18   ,    data['姓名'].str.contains('郑权')   等等
+返回的都是bool索引，就是一行行或一列列的True或False
+要调用该列可以加索引 例如 data[data['年龄'] > 18]
